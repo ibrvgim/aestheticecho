@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  /* custom font */
+  --font-jost: "Jost", sans-serif;
+
+  /* custom colors */
+  --color-peach: hsl(11, 73%, 66%);
+  --color-light-peach: hsl(11, 100%, 80%);
+  --color-lighter-peach: hsl(14, 76%, 97%);
+}
+
+.active {
+  color: hsl(11, 73%, 66%);
+}
