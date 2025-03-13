@@ -4,7 +4,7 @@ import designs from "../../data/designsCatalog";
 
 function Catalog() {
   return (
-    <section className="my-28 grid h-[40rem] grid-cols-2 grid-rows-2 gap-6">
+    <section className="my-40 grid h-[40rem] grid-cols-2 grid-rows-2 gap-6">
       {designs.map((design) => (
         <div
           key={design.title}
@@ -19,7 +19,7 @@ function Catalog() {
             </p>
             <Link
               to={design.path}
-              className="group flex items-center gap-1 text-sm font-medium tracking-[0.15em] hover:text-gray-100"
+              className="group flex items-center gap-1 text-sm font-medium tracking-[0.15em]"
             >
               View Projects
               <ChevronRightIcon className="group-hover:text-light-peach size-5 transition-colors" />

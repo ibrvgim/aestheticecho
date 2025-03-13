@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import Button from "../global/Button";
 
 function AwardCard() {
   return (
@@ -8,18 +8,13 @@ function AwardCard() {
           Award-winning custom designs and digital branding solutions
         </p>
 
-        <p className="text-[17px] tracking-wide">
+        <p className="mb-10 text-[17px] tracking-wide">
           With over 10 years in the industry, we are experienced in creating
           fully responsive websites, mobile design, and engaging brand
           experiences. Find out more about our services.
         </p>
 
-        <Link
-          to="/about"
-          className="hover:bg-light-peach mt-8 inline-block rounded-md bg-white px-10 py-2 text-lg tracking-wider text-gray-800 transition-colors duration-300 hover:text-white"
-        >
-          Learn More
-        </Link>
+        <Button path="/about">Learn More</Button>
       </div>
 
       <div className="absolute right-0 -bottom-64">
