@@ -3,10 +3,10 @@ import Navigation from "./components/global/Navigation";
 
 function App() {
   return (
-    <div className="font-jost px-20 py-12">
+    <div className="font-jost mx-auto max-w-[110rem] bg-[url(./assets/shared/desktop/bg-pattern-leaf.svg)] bg-left bg-no-repeat px-20 py-12">
       <Navigation />
 
-      <main className="py-14">
+      <main>
         <Outlet />
       </main>
     </div>

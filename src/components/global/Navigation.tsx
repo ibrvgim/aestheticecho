@@ -8,16 +8,13 @@ const links = [
 
 function Navigation() {
   return (
-    <div className="flex items-center justify-between text-gray-800">
-      <Link
-        to="/"
-        className="text-3xl font-semibold tracking-widest text-gray-800"
-      >
+    <div className="flex items-center justify-between tracking-widest text-gray-800">
+      <Link to="/" className="text-3xl font-semibold text-inherit">
         aestheticecho
       </Link>
 
       <nav>
-        <ul className="flex items-center gap-10 text-[15px] tracking-widest text-gray-700 uppercase">
+        <ul className="flex items-center gap-10 text-sm text-gray-700 uppercase">
           {links.map((link) => (
             <li key={link.title}>
               <NavLink to={link.path} className="hover:text-peach">
