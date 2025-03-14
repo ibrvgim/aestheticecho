@@ -9,7 +9,7 @@ const links = [
 function Navigation({ theme = "dark" }: { theme?: string }) {
   return (
     <div
-      className={`flex items-center justify-between tracking-widest ${theme === "dark" ? "text-gray-800" : "text-white"}`}
+      className={`flex items-center justify-between tracking-widest ${theme === "dark" ? "text-gray-800" : "text-gray-100"}`}
     >
       <Link to="/" className="text-3xl font-semibold text-inherit">
         aestheticecho

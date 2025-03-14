@@ -1,10 +1,12 @@
 import { Link } from "react-router";
-import Navigation from "../global/Navigation";
+import Navigation from "./Navigation";
 import socialMedia from "../../data/socialMedia";
 
-function Footer() {
+function Footer({ checkPath }: { checkPath: (value: string) => boolean }) {
   return (
-    <footer className="bg-gray-800 px-20 pt-32 pb-14">
+    <footer
+      className={`bg-gray-800 px-20 pb-16 ${checkPath("contact") ? "pt-12" : "pt-32"}`}
+    >
       <div className="border-b-[1px] border-b-gray-600 pb-8">
         <Navigation theme="light" />
       </div>

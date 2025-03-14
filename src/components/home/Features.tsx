@@ -17,7 +17,7 @@ function Features() {
               />
             </div>
 
-            <p className="text-lg font-medium tracking-widest text-gray-700 uppercase">
+            <p className="text-lg font-semibold tracking-widest text-gray-700 uppercase">
               {feature.title}
             </p>
             <p className="leading-relaxed tracking-wide text-gray-600">
