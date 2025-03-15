@@ -12,7 +12,7 @@ function About() {
       >
         <Image
           source="image-about.jpg"
-          description="about card image"
+          smallImage="image-about-small.jpg"
           style="h-[25rem] w-[35rem]"
         />
       </CardContainer>
@@ -23,7 +23,7 @@ function About() {
       >
         <Image
           source="image-world-class-talent.jpg"
-          description="talent card image"
+          smallImage="image-world-class-talent-small.jpg"
           style="h-[40rem] w-[35rem]"
         />
       </SecondaryCardContainer>
@@ -37,7 +37,7 @@ function About() {
       >
         <Image
           source="image-real-deal.jpg"
-          description="real deal card image"
+          smallImage="image-real-deal-small.jpg"
           style="h-[40rem] w-[35rem]"
         />
       </SecondaryCardContainer>

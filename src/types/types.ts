@@ -7,7 +7,8 @@ export interface LocationCardType {
   phone: string;
   mail: string;
   mapSide?: "left" | "right";
-  image: string;
+  icon: string;
+  position: [number, number];
 }
 
 export interface PortfolioCardType {

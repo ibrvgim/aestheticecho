@@ -1,4 +1,5 @@
 import { LocationCardType } from "../../types/types";
+import Map from "./Map";
 
 function LocationCard({
   company,
@@ -9,9 +10,11 @@ function LocationCard({
   phone,
   mail,
   mapSide = "right",
-  image,
+  position,
 }: LocationCardType) {
-  const map = <Map image={image} />;
+  const map = (
+    <Map address={`${postalCode} ${city}, ${address}`} position={position} />
+  );
 
   return (
     <div className="flex h-80 gap-8">
@@ -36,17 +39,6 @@ function LocationCard({
       </div>
 
       {mapSide === "right" && map}
-    </div>
-  );
-}
-
-function Map({ image }: { image: string }) {
-  return (
-    <div className="overflow-hidden rounded-xl">
-      <img
-        src={`/assets/locations/desktop/${image}`}
-        alt="location illustration"
-      />
     </div>
   );
 }
