@@ -3,7 +3,7 @@ import CountriesCard from "../components/global/CountriesCard";
 
 function Contact() {
   return (
-    <section className="my-16">
+    <section>
       <ContactForm />
       <CountriesCard />
     </section>

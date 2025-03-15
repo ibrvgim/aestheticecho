@@ -9,3 +9,9 @@ export interface LocationCardType {
   mapSide?: "left" | "right";
   image: string;
 }
+
+export interface PortfolioCardType {
+  title: string;
+  description: string;
+  image: string;
+}

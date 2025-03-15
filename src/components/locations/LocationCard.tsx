@@ -17,7 +17,7 @@ function LocationCard({
     <div className="flex h-80 gap-8">
       {mapSide === "left" && map}
 
-      <div className="bg-lighter-peach flex flex-1 flex-col justify-center gap-5 rounded-xl bg-[url(./assets/shared/desktop/bg-pattern-two-circles.svg)] bg-center bg-no-repeat px-24">
+      <div className="bg-lighter-peach flex flex-1 flex-col justify-center gap-5 rounded-xl bg-[url(/assets/shared/desktop/bg-pattern-two-circles.svg)] bg-center bg-no-repeat px-24">
         <p className="text-peach text-4xl font-semibold">{country}</p>
 
         <ul className="flex gap-36">
@@ -44,7 +44,7 @@ function Map({ image }: { image: string }) {
   return (
     <div className="overflow-hidden rounded-xl">
       <img
-        src={`./assets/locations/desktop/${image}`}
+        src={`/assets/locations/desktop/${image}`}
         alt="location illustration"
       />
     </div>

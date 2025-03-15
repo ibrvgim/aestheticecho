@@ -3,9 +3,10 @@ import locations from "../data/locations";
 
 function Locations() {
   return (
-    <section className="mt-16 flex flex-col gap-8">
+    <section className="flex flex-col gap-8">
       {locations.map((location, index) => (
         <LocationCard
+          key={location.country}
           {...location}
           mapSide={(index + 1) % 2 === 0 ? "left" : "right"}
         />

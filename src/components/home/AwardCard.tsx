@@ -2,7 +2,7 @@ import Button from "../global/Button";
 
 function AwardCard() {
   return (
-    <section className="bg-peach relative my-16 flex h-[35rem] items-center overflow-hidden rounded-xl bg-[url(./assets/home/desktop/bg-pattern-hero-home.svg)] bg-right-top bg-no-repeat px-20 text-gray-100">
+    <section className="bg-peach relative flex h-[35rem] items-center overflow-hidden rounded-xl bg-[url(../assets/home/desktop/bg-pattern-hero-home.svg)] bg-right-top bg-no-repeat px-20 text-gray-100">
       <div className="w-1/2">
         <p className="pb-4 text-5xl leading-tight font-medium tracking-wide">
           Award-winning custom designs and digital branding solutions
@@ -19,7 +19,7 @@ function AwardCard() {
 
       <div className="absolute right-0 -bottom-64">
         <img
-          src="./assets/home/desktop/image-hero-phone.png"
+          src="/assets/home/desktop/image-hero-phone.png"
           draggable={false}
         />
       </div>

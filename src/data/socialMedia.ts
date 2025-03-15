@@ -1,27 +1,27 @@
 const socialMedia = [
   {
     url: "/",
-    image: "./assets/shared/desktop/icon-facebook.svg",
+    image: "icon-facebook.svg",
   },
 
   {
     url: "/",
-    image: "./assets/shared/desktop/icon-instagram.svg",
+    image: "icon-instagram.svg",
   },
 
   {
     url: "/",
-    image: "./assets/shared/desktop/icon-pinterest.svg",
+    image: "icon-pinterest.svg",
   },
 
   {
     url: "/",
-    image: "./assets/shared/desktop/icon-twitter.svg",
+    image: "icon-twitter.svg",
   },
 
   {
     url: "/",
-    image: "./assets/shared/desktop/icon-youtube.svg",
+    image: "icon-youtube.svg",
   },
 ];
 
