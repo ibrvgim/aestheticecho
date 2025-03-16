@@ -18,13 +18,12 @@ function Image({
     }
 
     const img = imageElement.current;
+    if (!img) return;
 
-    if (img) {
-      if (img.complete) {
-        loaded();
-      } else {
-        img.addEventListener("load", loaded);
-      }
+    if (img.complete) {
+      loaded();
+    } else {
+      img.addEventListener("load", loaded);
     }
 
     return () => {

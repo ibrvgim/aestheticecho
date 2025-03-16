@@ -3,7 +3,7 @@ import "leaflet/dist/leaflet.css";
 
 function Map({
   address,
-  position = [40.7128, -74.006],
+  position,
 }: {
   address: string;
   position: [number, number];

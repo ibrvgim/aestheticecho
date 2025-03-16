@@ -14,12 +14,14 @@ function AwardCard() {
           experiences. Find out more about our services.
         </p>
 
-        <Button path="/about">Learn More</Button>
+        <Button path="/about-us">Learn More</Button>
       </div>
 
       <div className="absolute right-0 -bottom-64">
         <img
-          src="/assets/home/desktop/image-hero-phone.png"
+          className="h-full w-full"
+          src="/assets/home/desktop/image-hero-phone.webp"
+          alt="phone image"
           draggable={false}
         />
       </div>

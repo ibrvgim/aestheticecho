@@ -13,7 +13,7 @@ function DesignLayout({ works }: { works: PortfolioCardType[] }) {
 function DesignCard({ work }: { work: PortfolioCardType }) {
   return (
     <div className="bg-lighter-peach group overflow-hidden rounded-xl text-center shadow-sm">
-      <img src={work.image} alt={work.title} />
+      <img src={work.image} alt={work.title} draggable={false} />
 
       <div className="group-hover:bg-peach h-full px-10 py-8 transition-all duration-700">
         <p className="text-peach mb-3 text-lg font-medium tracking-widest uppercase transition-all duration-1000 group-hover:text-white">

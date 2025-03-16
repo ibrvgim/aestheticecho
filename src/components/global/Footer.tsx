@@ -32,7 +32,13 @@ function Footer({ checkPath }: { checkPath: (value: string) => boolean }) {
         <li className="flex items-center gap-5">
           {socialMedia.map((social) => (
             <Link to={social.url} key={social.image}>
-              <img src={`/assets/shared/desktop/${social.image}`} />
+              <img
+                className="h-full w-full"
+                src={`/assets/shared/desktop/${social.image}`}
+                alt={social.image}
+                loading="lazy"
+                draggable={false}
+              />
             </Link>
           ))}
         </li>

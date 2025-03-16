@@ -1,28 +1,66 @@
-import CardContainer from "../global/CardContainer";
+import { InputsType } from "../../types/types";
 import Input from "../global/Input";
+import { useForm, SubmitHandler } from "react-hook-form";
 
 function ContactForm() {
-  return (
-    <CardContainer
-      title="Contact Us"
-      description="Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line."
-    >
-      <form className="flex flex-1 flex-col gap-2 py-16 pr-26">
-        <Input type="text" placeholder="Full Name" />
-        <Input type="email" placeholder="E-mail" />
-        <Input type="tel" placeholder="Mobile Phone" />
-        <Input role="textarea" placeholder="Message" />
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<InputsType>();
 
-        <div className="mt-10 self-end">
-          <button
-            type="submit"
-            className="hover:bg-light-peach cursor-pointer rounded-md bg-white px-10 py-2 tracking-wider text-gray-800 transition-colors duration-300 hover:text-white"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </CardContainer>
+  const onSubmit: SubmitHandler<InputsType> = () => {
+    reset();
+    alert("success");
+  };
+
+  return (
+    <form
+      className="flex flex-1 flex-col gap-2 py-16 pr-26"
+      onSubmit={handleSubmit(onSubmit)}
+    >
+      <Input
+        type="text"
+        placeholder="Full Name"
+        register={register}
+        name="fullName"
+        error={errors?.fullName?.message}
+      />
+
+      <Input
+        type="email"
+        placeholder="E-mail"
+        register={register}
+        name="email"
+        error={errors?.email?.message}
+      />
+
+      <Input
+        type="tel"
+        placeholder="Mobile Phone"
+        register={register}
+        name="phone"
+        error={errors?.phone?.message}
+      />
+
+      <Input
+        role="textarea"
+        placeholder="Message"
+        register={register}
+        name="message"
+        error={errors?.message?.message}
+      />
+
+      <div className="mt-10 self-end">
+        <button
+          type="submit"
+          className="hover:bg-light-peach cursor-pointer rounded-md bg-white px-10 py-2 tracking-wider text-gray-800 transition-colors duration-300 hover:text-white"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
   );
 }
 

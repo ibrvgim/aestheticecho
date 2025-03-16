@@ -16,3 +16,22 @@ export interface PortfolioCardType {
   description: string;
   image: string;
 }
+
+// metadata types
+export interface MetadataType {
+  path: string;
+  title: string;
+  meta: MetaItemType[];
+}
+
+export interface MetaItemType {
+  name: string;
+  content: string;
+}
+
+export interface InputsType {
+  fullName: string;
+  email: string;
+  phone: string;
+  message: string;
+}

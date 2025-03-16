@@ -11,6 +11,7 @@ function Features() {
           >
             <div className="bg-[url(/assets/home/desktop/bg-pattern-hero-home.svg)] bg-cover bg-center bg-no-repeat">
               <img
+                className="h-full w-full"
                 src={`/assets/home/desktop/${feature.image}`}
                 alt={`${feature.title.toLowerCase()} feature image`}
                 draggable={false}

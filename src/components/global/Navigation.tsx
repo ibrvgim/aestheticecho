@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router";
 
 const links = [
-  { path: "/about", title: "Company" },
+  { path: "/about-us", title: "Company" },
   { path: "/locations", title: "Locations" },
   { path: "/contact", title: "Contact" },
 ];

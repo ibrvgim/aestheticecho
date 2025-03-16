@@ -11,6 +11,7 @@ function CountriesCard() {
               src={`/assets/shared/desktop/${location.icon}`}
               alt="country symbols icon"
               draggable={false}
+              loading="lazy"
             />
           </div>
           <p className="mb-6 text-lg font-semibold tracking-widest text-gray-700 uppercase">
