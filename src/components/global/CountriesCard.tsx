@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function CountriesCard() {
   return (
-    <div className="my-40 flex items-center justify-evenly text-center">
+    <div className="my-40 flex items-center justify-around text-center">
       {locations.map((location) => (
         <div key={location.country}>
           <div className="mb-10 bg-[url(/assets/home/desktop/bg-pattern-hero-home.svg)] bg-cover bg-center bg-no-repeat">

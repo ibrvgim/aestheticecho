@@ -5,17 +5,17 @@ import socialMedia from "../../data/socialMedia";
 function Footer({ checkPath }: { checkPath: (value: string) => boolean }) {
   return (
     <footer
-      className={`bg-gray-800 px-20 pb-16 ${checkPath("contact") ? "pt-12" : "pt-32"}`}
+      className={`bg-gray-800 px-10 pb-16 md:px-20 ${checkPath("contact") ? "pt-12" : "pt-32"}`}
     >
       <div className="border-b-[1px] border-b-gray-600 pb-8">
         <Navigation theme="light" />
       </div>
 
-      <ul className="flex items-center justify-between pt-10 tracking-wide text-gray-400">
+      <ul className="flex flex-col flex-wrap items-center justify-between gap-10 pt-10 text-center tracking-wide text-gray-400 md:flex-row md:gap-x-20 md:gap-y-15 md:text-left lg:gap-y-0">
         <li>
           <p className="mb-2 font-bold">aestheticecho GmbH </p>
-          <p>Schützengasse 2</p>
-          <p>99423 Weimar</p>
+          <p>Schwartzkopffstraße 19</p>
+          <p>10115 Berlin</p>
         </li>
 
         <li>
@@ -29,7 +29,7 @@ function Footer({ checkPath }: { checkPath: (value: string) => boolean }) {
           </p>
         </li>
 
-        <li className="flex items-center gap-5">
+        <li className="mt-5 flex items-center gap-5 md:mt-0">
           {socialMedia.map((social) => (
             <Link to={social.url} key={social.image}>
               <img

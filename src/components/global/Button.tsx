@@ -12,7 +12,7 @@ function Button({
   return (
     <Link
       to={path}
-      className={`inline-block rounded-md px-10 py-2 text-lg tracking-wider transition-colors duration-300 ${style === "primary" ? "bg-peach hover:bg-light-peach text-white hover:text-white" : "hover:bg-light-peach bg-white text-gray-800 hover:text-white"}`}
+      className={`inline-block min-w-48 rounded-md px-8 py-2 text-center tracking-wider transition-colors duration-300 sm:px-10 sm:py-2 sm:text-lg ${style === "primary" ? "bg-peach hover:bg-light-peach text-white hover:text-white" : "hover:bg-light-peach bg-white text-gray-800 hover:text-white"}`}
     >
       {children}
     </Link>
