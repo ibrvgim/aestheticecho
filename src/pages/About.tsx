@@ -20,6 +20,7 @@ function About() {
           source="image-about.webp"
           smallImage="image-about-small.webp"
           style="h-[25rem] w-[35rem]"
+          imgStyle="object-bottom"
         />
       </CardContainer>
 

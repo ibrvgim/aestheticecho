@@ -4,10 +4,12 @@ function Image({
   source,
   smallImage,
   style,
+  imgStyle = "object-center",
 }: {
   source: string;
   smallImage: string;
   style?: string;
+  imgStyle?: string;
 }) {
   const imageElement = useRef<HTMLImageElement>(null);
   const [state, setState] = useState(false);
@@ -35,15 +37,15 @@ function Image({
 
   return (
     <div
-      className={`bg-lighter-peach ${style} bg-cover bg-center bg-no-repeat`}
+      className={`bg-lighter-peach ${style} h-[27rem] bg-cover bg-center bg-no-repeat max-xl:h-[20rem] max-xl:w-full`}
       style={{ backgroundImage: `url(/assets/about/desktop/${smallImage})` }}
     >
       <img
         ref={imageElement}
         src={`/assets/about/desktop/${source}`}
-        className={`block h-full w-full object-cover object-center transition-opacity duration-300 ease-in-out ${
+        className={`block h-full w-full object-cover transition-opacity duration-300 ease-in-out ${
           state ? "opacity-100" : "opacity-0"
-        }`}
+        } ${imgStyle}`}
         draggable={false}
         loading="lazy"
         alt=""

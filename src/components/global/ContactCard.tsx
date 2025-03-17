@@ -7,7 +7,7 @@ function ContactCard() {
         <p className="mb-4 text-3xl font-medium md:mb-6 md:text-4xl lg:text-5xl">
           Let’s talk about your project
         </p>
-        <p className="text-[15px]">
+        <p className="md:text-[17px]">
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
         </p>
