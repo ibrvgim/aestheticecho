@@ -12,6 +12,8 @@ aestheticecho creates custom designs that make your brand stand out. From websit
 - ReactJS (v19) - https://react.dev/
 - TypeScript - https://www.typescriptlang.org/
 - Tailwind CSS - https://tailwindcss.com/
+- Leaflet Interactive Maps - https://leafletjs.com/
+- React Hook Form - https://www.react-hook-form.com/
 
 ## AUTHOR
 
