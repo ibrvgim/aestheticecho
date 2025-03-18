@@ -12,9 +12,11 @@ function TitleCard({ url }: { url: string }) {
   ) as TitleType;
 
   return (
-    <div className="bg-peach mb-40 rounded-xl bg-[url(/assets/shared/desktop/bg-pattern-call-to-action.svg)] bg-cover bg-right bg-no-repeat px-20 py-16 text-center text-white">
-      <p className="pb-6 text-5xl font-medium tracking-wider">{title}</p>
-      <p className="mx-auto w-1/3 tracking-wide">{description}</p>
+    <div className="bg-peach mb-20 rounded-xl bg-[url(/assets/shared/desktop/bg-pattern-call-to-action.svg)] bg-cover bg-right bg-no-repeat px-8 py-16 text-center text-white sm:mb-30 sm:px-16 md:mb-40">
+      <p className="pb-6 text-4xl font-medium tracking-wider sm:text-5xl">
+        {title}
+      </p>
+      <p className="mx-auto tracking-wide lg:w-1/2">{description}</p>
     </div>
   );
 }

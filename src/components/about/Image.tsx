@@ -37,7 +37,7 @@ function Image({
 
   return (
     <div
-      className={`bg-lighter-peach ${style} h-[27rem] bg-cover bg-center bg-no-repeat max-xl:h-[20rem] max-xl:w-full`}
+      className={`bg-lighter-peach ${style} bg-cover bg-center bg-no-repeat max-xl:h-[20rem] max-xl:w-full`}
       style={{ backgroundImage: `url(/assets/about/desktop/${smallImage})` }}
     >
       <img

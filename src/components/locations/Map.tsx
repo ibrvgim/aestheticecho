@@ -14,8 +14,8 @@ function Map({
       zoom={15}
       minZoom={5}
       maxZoom={18}
-      style={{ height: "100%", width: "30%", borderRadius: "12px" }}
       attributionControl={false}
+      className="h-full w-full rounded-xl lg:w-[30%]"
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={position}>

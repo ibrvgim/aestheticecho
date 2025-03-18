@@ -17,7 +17,7 @@ function ContactForm() {
 
   return (
     <form
-      className="flex flex-1 flex-col gap-2 py-16 pr-26"
+      className="flex w-full flex-1 flex-col gap-2 px-10 py-10 sm:px-24 xl:px-0 xl:py-16 xl:pr-26"
       onSubmit={handleSubmit(onSubmit)}
     >
       <Input
@@ -52,7 +52,7 @@ function ContactForm() {
         error={errors?.message?.message}
       />
 
-      <div className="mt-10 self-end">
+      <div className="mt-10 self-center sm:self-end">
         <button
           type="submit"
           className="hover:bg-light-peach cursor-pointer rounded-md bg-white px-10 py-2 tracking-wider text-gray-800 transition-colors duration-300 hover:text-white"
