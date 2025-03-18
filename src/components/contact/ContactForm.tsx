@@ -2,7 +2,7 @@ import { InputsType } from "../../types/types";
 import Input from "../global/Input";
 import { useForm, SubmitHandler } from "react-hook-form";
 
-function ContactForm() {
+function ContactForm({ submittedForm }: { submittedForm: () => void }) {
   const {
     register,
     handleSubmit,
@@ -12,7 +12,7 @@ function ContactForm() {
 
   const onSubmit: SubmitHandler<InputsType> = () => {
     reset();
-    alert("success");
+    submittedForm();
   };
 
   return (
